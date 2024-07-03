@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Scoreboard</title>
+    </head>
+    <body>
+        <main class="container">
+            <section class="score-section">
+                <h3>HOME</h3>
+                <div class="score-container">
+                    <div class="scorecard">
+                        <h2 class="score" id="home-score">0</h2>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button onclick="increaseHomeScoreByOne()">+1</button>
+                    <button onclick="increaseHomeScoreByTwo()">+2</button>
+                    <button onclick="increaseHomeScoreByThree()">+3</button>
+                </div>
+                <button class="clear-btn" onclick="clearHomeScore()">Clear Home Score</button>
+            </section>
+            <section class="score-section">
+                <h3>GUEST</h3>
+                <div class="score-container">
+                    <div class="scorecard">
+                        <h2 class="score" id="guest-score">0</h2>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button onclick="increaseGuestScoreByOne()">+1</button>
+                    <button onclick="increaseGuestScoreByTwo()">+2</button>
+                    <button onclick="increaseGuestScoreByThree()">+3</button>
+                </div> 
+                <button class="clear-btn" onclick="clearGuestScore()">Clear Guest Score</button>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
